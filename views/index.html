@@ -2,6 +2,190 @@
 <html>
   <head>
     <title>Website-Projekt</title>
+    <meta name="AUTHOR" content="Zineta">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Zineta Osmani">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Vorname Nachname">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Vorname Nachname, Bewerbung">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<p>Absatz</p>
+/*  ------------------------------------*/
+/*  Standardpositionierung der DIV-Boxen*/
+/*  ------------------------------------*/
+
+#kopfbereich {
+  position:fixed;            ! Position des  Kopfbereichs ist immer oben - FIX!;
+  left:0;                    ! Position ganz links;
+  top:0;                     ! Position oben;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:green;    ! Hintergrundfarbe;
+  width:100%;                ! Breite des Kopfbereichs;
+  height:100px;              ! Höhe des Kopfbereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
+}
+#navibereich {
+  position:fixed;            ! Position des Navibereichs immer links!;
+  top: 100px;                ! Position unterhalb des Kopfbereiches;
+  left:0;                    ! Position ganz links;
+  margin-top:0px;            ! Außenabstand zum Kopfbereich;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:red;      ! Hintergrundfarbe;
+  width:100%;                ! Breite des Navibereichs;
+  height:50px;               ! Minimal-Höhe des Navibereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
+}
+#textbereich {
+  position:fixed;            ! Position des Textbereichs immer in der Mitte!;
+  left:0;                    ! Textbereich fängt ganz links an;
+  right:0;                   ! …und geht bis ganz rechts;
+  top:150px;                 ! Außenabstand zum Kopfbereich;
+  padding-top:20px;          ! Innenabstand nach oben;
+  padding-bottom:60px;       ! Innenabstand nach unten;
+  padding-right:210px;       ! Außenabstand nach rechts;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  height:100%;               ! Höhe des Textbereichs;
+  overflow-y: auto;          ! Zeige Scroillbalken automatisch;
+  background-color:rgba(255,255,255,0.5); ! Hintergrund ist weiß mit 50 %iger Transparenz;
+}
+#newsbereich {
+  position:fixed;            ! Position des Newsbereichs immer rechts!;
+  right:0px;                 ! Rechtsausrichtung;
+  top: 150px;                ! Position unterhalb des Kopfbereiches;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  background-color:yellow;   ! Hintergrundfarbe;
+  width:200px;               ! Breite des Newsbereichs;
+  min-height:300px;          ! Minimal-Höhe des Newsbereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;                
+}
+#fussbereich {
+  position:fixed;            ! Position des Fußbereichs immer unten!;
+  bottom: 0;                 ! Unten ausgerichtet!;
+  left:0;                    ! Position ganz links;
+  border: 1px solid #ccc;    ! Rahmenart und -farbe;
+  width: 100%;               ! Breite des Fussbereichs;
+  background-color: blue;    ! Hintergrundfarbe;
+  height:50px;               ! Höhe des Fußbereichs;
+  z-index:2;                 ! Kopfbereich überlagert andere Bereiche;
+}
+
+<h1>Überschrift</h1>
+
+<br>	Umbruch
+
+<b> bold </b>
+
+<u> unterstrichen </u>
+
+<i> kursiv </i>
+
+<ul>•	Aufzählung mit Punkten</ul>
+
+<li>	Element einer Liste
+
+<a href="www.google.de" target="_blank">Link auf externe Seite</a>
+
+
+<a href="news.htm" target="_self">Link auf interne Seite</a> 
+
+<img alt="Logo" width="200" src="logo.jpg">	Ein Bild einbinden
+
+<hr>	Linie
+
+
+Tabellen
+
+<table border=1>
+<tr>
+ <td>Datenzelle: 1.1 </td>
+ <td>Datenzelle: 1.2 </td>
+ <td>Datenzelle: 1.3 </td>
+</tr>
+<tr>
+ <td>Datenzelle: 2.1 </td>
+ <td>Datenzelle: 2.2 </td>
+ <td>Datenzelle: 2.3 </td>
+</tr>
+<tr>
+ <td>Datenzelle: 2.1 </td>
+ <td>Datenzelle: 2.2 </td>
+ <td>Datenzelle: 2.3 </td>
+</tr>
+</table>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+      <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <p>Hello World</p>
+  </body>
+</html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Bewerbungshomepage</TITLE>
+<META NAME="AUTHOR" CONTENT="Michael Otto">
+<META NAME="COPYRIGHT" CONTENT="Copyright (c) 2021 by Michael Otto">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="DESCRIPTION" CONTENT="Bewerbungshomepage von Michael Otto">
+<META NAME ="KEYWORDS" CONTENT ="Bewerbungshomepage, Michael Otto,
+Bewerbung">
+<!-- import the webpage's stylesheet -->
+<link rel="stylesheet" href="/style.css" />
+</HEAD>
+<BODY>
+		<div id="kopfbereich">
+		</div> <!-- Ende kopfbereich -->
+
+		<div id="navibereich">
+		</div> <!-- Ende navibereich -->
+
+		<div id="textbereich">
+		</div> <!-- Ende textbereich -->
+
+		<div id="newsbereich">
+		</div> <!-- Ende newsbereich -->
+
+		<div id="fussbereich">
+<body bgcolor="grey">
+
+<p>Absatz</p>
+
+<h1>Überschrift</h1>
+
+<br>	Umbruch
+
+<b> bold </b>
+
+<u> unterstrichen </u>
+
+<i> kursiv </i>
+
+<ul>•	Aufzählung mit Punkten</ul>
+
+<li>	Element einer Liste
+
+<a href="www.google.de" target="_blank">Link auf externe Seite</a>
+
+
+<a href="news.htm" target="_self">Link auf interne Seite</a> 
+
+font-weight: 400;
+  src: url(Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+<head>
+    <title>Website-Projekt</title>
     <meta name="AUTHOR" content="Euer Name">
     <meta name="COPYRIGHT" content="Copyright (c) 2025 by Vorname Nachname">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
@@ -14,9 +198,321 @@
     <link rel="stylesheet" href="/style.css" />
       <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
+     <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+  </head>
+{
+font-family: 'Montserrat', sans-serif;  ! Festlegung der Schriftart;
+font-style:normal;                      ! Festlegung des Schrifttyps;
+font-size:11pt;                         ! Festlegung des Schriftgröße;
+font-weight:400;                        ! Festlegung der Fettschrift (400 = normal, 700 = fett);
+font-weight: 400;
+  src: url(Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url(Montserrat-VariableFont_wght.ttf) format('truetype');
+}
+<head>
+    <title>Website-Projekt</title>
+    <meta name="AUTHOR" content="Euer Name">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Vorname Nachname">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Vorname Nachname">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Vorname Nachname, Bewerbung">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+      <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+     <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
   </head>
 
+p {
+font-family: 'Montserrat', sans-serif;  ! Festlegung der Schriftart;
+font-style:normal;                      ! Festlegung des Schrifttyps;
+font-size:11pt;                         ! Festlegung des Schriftgröße;
+font-weight:400;                        ! Festlegung der Fettschrift (400 = normal, 700 = fett);
+DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE>Bewerbungshomepage</TITLE>
+<META NAME="AUTHOR" CONTENT="Michael Otto">
+<META NAME="COPYRIGHT" CONTENT="Copyright (c) 2025 by Michael Otto">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="DESCRIPTION" CONTENT="Dies ist die Homepage von Michael Otto">
+<META NAME ="KEYWORDS" CONTENT ="Bewerbungshomepage, Michael Otto, Bewerbung">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- import the webpage's stylesheet -->
+<link rel="stylesheet" href="/style.css" />
+<!-- import the webpage's javascript file -->
+<script src="/script.js" defer></script>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+</HEAD>
+<BODY>
+	<div id="kopfbereich">
+</div> <!-- Ende kopfbereich -->
+         <div id="logobereich">
+         </div> <!-- Ende logobereich -->
+	<div id="navibereich"></div> <!-- Ende navibereich -->
+	<div id="textbereich">
+	  <div class="content-block">
+		<p class="title">Dies ist eine Überschrift</p> 
+		<p>Dies ist ein Beispieltext</p>
+    <img src="bild-name.png" class="text-image-left" alt="Bild im Text">
+	  </div><!-- Ende content-block -->
+	</div> <!-- Ende textbereich -->
+	<div id="newsbereich"></div> <!-- Ende newsbereich -->
+	<div id="fussbereich"></div> <!-- Ende fussbereich -->
+</BODY>
+</HTML>
+
+ #logobereich {
+  position:fixed;               ! Position des Logos ist fest;
+  top:0;                            ! Position oben;
+  left:0;                            ! Position ganz links;
+  border: 0px solid #ccc; ! Rahmenart und -farbe;
+  background-image:url("name-des-bildes.png");
+  background-repeat:no-repeat; 
+  background-size: cover;    
+  background-color:rgba(16,78,139,0);    ! Hintergrundfarbe;
+  width:200px;                 ! Breite des Kopfbereichs;
+.text-image-left {
+width:200px;  ! Größe des Bildes wird festgelegt;
+margin:0px;   ! Abstand zu anderen Objekten;
+float:left;        ! Ausrichtung links;
+}
+.text-image-right {
+width:200px; ! Größe des Bildes wird festgelegt;
+margin:0px;  ! Abstand zu anderen Objekten;
+float:right;     ! Ausrichtung rechts;
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<html>
+  <head>
+    <title>Bewerbungshomepage</title>
+    <meta name="AUTHOR" content="Michael Otto">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Michael Otto">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Michael Otto">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Michael Otto, Bewerbung">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+  </head>
   <body>
-    <p>Hello World</p>
+	<div id="kopfbereich">
+              <p class=“header-title“>Dies ist eine Headerüberschrift</p>
+	</div> <!-- Ende kopfbereich -->
+	<div id="navibereich"></div> <!-- Ende navibereich -->
+	<div id="textbereich">
+            <div class="content-block">
+	       <p class="title">Dies ist eine Überschrift</p> 
+<p>Dies ist ein Beispieltext</p>
+           </div><!-- Ende content-block -->
+	</div> <!-- Ende textbereich -->
+	<div id="newsbereich"></div> <!-- Ende newsbereich -->
+	<div id="fussbereich"></div> <!-- Ende fussbereich -->
   </body>
 </html>
+
+.header-title {
+font-family:‘Montserrat’, sans-serif;   ! Festlegung der Schriftart;
+font-size:24pt;				! Festlegung des Schriftgröße;
+font-weight:700;			! Festlegung des Fettschrift, hier können Sie auch bold angeben;
+text-align:center;			! Schriftausrichtung, möglich ist left | center | right;
+}
+DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<HTML>
+  <head>
+    <title>Bewerbungshomepage</title>
+    <meta name="AUTHOR" content="Michael Otto">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Michael Otto">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Michael Otto">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Michael Otto, Bewerbung">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+   <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+ <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
+	<div id="kopfbereich">
+	<img class=“header-image“ src="passbild.jpg" alt="Passbild">
+	</div> <!-- Ende kopfbereich -->
+	<div id="navibereich">
+
+
+</div> <!-- Ende navibereich -->
+	<div id="textbereich">
+            	  <div class="content-block">
+	       <p class="title">Dies ist eine Überschrift</p> 
+	       <p>Dies ist ein Beispieltext</p>
+           	  </div><!-- Ende content-block -->
+	</div> <!-- Ende textbereich -->
+	<div id="newsbereich">
+	</div> <!-- Ende newsbereich -->
+	<div id="fussbereich">
+	</div> <!-- Ende fussbereich -->
+</body>
+</html>
+/*  -----------------------------------------        */
+/*  Menüformatierung                                 */
+/*  -----------------------------------------        */
+
+/*  Linkformatierung für das Menü übergreifend       */
+.naviformat a, button {
+  	font-family: 'Montserrat', sans-serif;
+  	text-transform:uppercase;	! Verwende Großbuchstaben;
+font-size:90%;            	! Festlegung des Schriftgröße;
+	font-weight:700;		      ! Festlegung Fettschrift für Montserrat;
+	color: rgb(0,0,0);		! Festlegung des Schriftfarbe (schwarz);
+	display: block;			! Art der Anzeige als Blockelement;
+	transition: all 0.3s ease-out 0s; ! Definition Übergang von Normal zu Hover;
+	text-decoration:none;		! Keinen Unterstrich unterhalb des Menütitels;
+  	line-height: 20px;		! Höhe der Zeile wird festgelegt;
+  	padding: 5px 5px;			! Innenabstand nach links/rechts/oben/unten;
+}
+/*  Formatierung des Hauptmenüs (mainnav)                  */
+.mainnav {
+	text-align:right;          ! Textausrichtung rechtbündig;
+/* -- ----------------------------- */
+/* -- BKSD - Remove Active          */
+/* -- ----------------------------- */
+function active_remove() {
+        $('.active').each(function(index) {
+         $(this).removeClass('active');
+       });
+    }
+/* -- ------------------------------ */
+/* -- BKSD - Set Active Menü         */
+/* -- ------------------------------ */
+ function setActiveMenu(id) {
+       /* Entferne Active-Markierung */
+       active_remove();
+       /* Füge Klasse Active hinzu */
+       jQuery(id).addClass('active');
+    }
+
+/*  -----------------------------------------        */
+/*  Menüformatierung                                 */
+/*  -----------------------------------------        */
+
+/*  Linkformatierung für das Menü übergreifend       */
+.naviformat a, button {
+  	font-family: 'Montserrat', sans-serif;
+  	text-transform:uppercase;	! Verwende Großbuchstaben;
+font-size:90%;            	! Festlegung des Schriftgröße;
+	font-weight:700;		      ! Festlegung Fettschrift für Montserrat;
+	color: rgb(0,0,0);		! Festlegung des Schriftfarbe (schwarz);
+	display: block;			! Art der Anzeige als Blockelement;
+	transition: all 0.3s ease-out 0s; ! Definition Übergang von Normal zu Hover;
+	text-decoration:none;		! Keinen Unterstrich unterhalb des Menütitels;
+  	line-height: 20px;		! Höhe der Zeile wird festgelegt;
+  	padding: 5px 5px;			! Innenabstand nach links/rechts/oben/unten;
+}
+/*  Formatierung des Hauptmenüs (mainnav)                  */
+.mainnav {
+	text-align:right;          ! Textausrichtung rechtbündig;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<html>
+  <head>
+    <title>Bewerbungshomepage</title>
+    <meta name="AUTHOR" content="Michael Otto">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Michael Otto">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Michael Otto">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Michael Otto, Bewerbung">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+    <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
+	<div id="kopfbereich">
+	   <img class=“header-image“ alt="Passbild"><p class="header-title">Bewerbungshomepage</p>
+	</div> <!-- Ende kopfbereich -->
+	<div id="navibereich">
+<ul id="nav" class="naviformat mainnav">
+<li><a id="main_menu_item_home" class="" href="index.html">HOME</a></li>
+<li><a id="main_menu_item_daten" class="" href="daten.html">PERSÖNLICHES</a></li>
+<li><a id="main_menu_item_schulbildung" class="" href="schulbildung.html">SCHULBILDUNG</a></li>
+<li><a id="main_menu_item_berufsbildung" class="" href="berufsbildung.html">BERUFSBILDUNG</a></li>
+<li><a id="main_menu_item_kontakt" class="" href="kontakt.html">KONTAKT</a></li>
+</ul>
+	</div> <!-- Ende navibereich -->
+<div id="textbereich">
+                   <div class="content-block">
+	       <p class="title">Dies ist eine Überschrift</p> 
+	       <p>Dies ist ein Beispieltext</p>
+                   </div><!-- Ende content-block -->
+	   </div> <!-- Ende textbereich -->
+  	   <div id="newsbereich">
+<div class = ”teaser”>
+                                          <p class = ”teaser_date”>News-Datum</p>
+                                          <p class = ”teaser_title”>News-Titel</p>
+                                          <p class = ”teaser_text”>Dies ist der News-Text</p>
+                                 <a href = ”berufsbildung.html” class=“teaser_link“>...mehr</a>
+                                 <hr class=“teaser_border“>
+                             </div>
+	   </div> <!-- Ende newsbereich -->
+ 	   <div id="fussbereich">
+	   </div> <!-- Ende fussbereich -->
+   </body>
+</html>
+/* ------------------------------------------ */
+/* -- Inhalte laden                           */
+/* -- ---------------- ---------------------- */
+   function load_content(bereich, page) {
+       obj1 = document.getElementById(bereich);
+       $(obj1).load('/' + page, function () {
+      });
+    }
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.1 Transitional//EN">
+<html>
+<head>
+<title>Bewerbungshomepage</title>
+<meta name="AUTHOR" content="Michael Otto">
+<meta name="COPYRIGHT" content="Copyright (c) 2025 by Michael Otto">
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+<meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Michael Otto">
+<meta name ="KEYWORDS" content ="Bewerbungshomepage, Michael Otto,Bewerbung">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- import the webpage's stylesheet -->
+<link rel="stylesheet" href="/style.css" />
+<!-- import the webpage's fonts -->
+<link rel="stylesheet" href="/fonts.css" /> 
+<!-- import the webpage's javascript file -->
+<script src="/script.js" defer></script>  
+<!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
+<div id="kopfbereich“></div> <!-- Ende kopfbereich -->
+ 
